@@ -1,5 +1,12 @@
-package com.bridgeit.Data_Structuress;
+**********************************************
+ *  @purpose      : hashing the number
+ *  @author       : P.LEELA KRISHNA
+ *  @version      : 1.0
 
+//*****************************************
+
+
+package com.bridgeit.Data_Structuress;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
