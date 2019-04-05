@@ -1,16 +1,20 @@
+*********************************************
+@purpose : to find number of nodes present in the binary tree
+@author   :POLIMERA LEELA KRISHNA
+@version : 1.0
+*********************************************
+
 package com.bridgeit.Data_Structuress;
-
 import com.bridgeit.utility.Utility;
-
 public class binarysearchtree 
 {
-
 public static class BinaryTree {
     // intializing three factorials.
 	static long fact1 = 1;
 	static long fact2 = 1;
 	static long fact3 = 1;
-
+ try
+ {
 	public static long factorial(long n) {
 
 		for (int i = 1; i <= n; i++) {
@@ -45,6 +49,9 @@ public static class BinaryTree {
 		System.out.println(tree + ":number of nodes in tree for =>" + n);
 
 	}
-
+	 catch(Exception e)
+	 {
+        System.out.println("invalid number");
+	 }
 }
 }
