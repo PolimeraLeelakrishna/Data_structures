@@ -1,5 +1,13 @@
-package com.bridgeit.Data_Structuress;
 
+**********************************************
+ *  @purpose      : for cheching given strings are palindrome or not using que
+ *  @author       : P.LEELA KRISHNA
+ *  @version      : 1.0
+
+//*****************************************
+
+
+package com.bridgeit.Data_Structuress;
 import com.bridgeit.DS.Utility.Dq_operations;
 import com.bridgeit.utility.Utility;
 
@@ -10,6 +18,8 @@ public class palindromchek
         String s1="";                         // initializing empty string
         System.out.println("Enter a word :");
         String word=Utility.getString();        
+		try
+		{
         if(word.matches("[a-zA-Z]+"))   //enter the words are in between the a to z
         {
         	Dq_operations que=new  	Dq_operations (word.length()); // create object
@@ -35,7 +45,12 @@ public class palindromchek
         {
         	System.err.println(" ************ Invalid Arguments ************");
         }
-        
+		}
+		catch(Exception e)
+		{
+			System.err.println("invalid");
+			
+		}
         
     }
 }
