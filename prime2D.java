@@ -1,5 +1,11 @@
 
 
+**********************************************
+ *  @purpose      : print the prime numbers in 2d array
+ *  @author       : P.LEELA KRISHNA
+ *  @version      : 1.0
+
+//*****************************************
 
 
 
