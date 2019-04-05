@@ -1,5 +1,4 @@
 package com.bridgeit.Data_Structuress;
-
 import com.bridgeit.DS.Utility.Que;
 import com.bridgeit.utility.Utility;
 
@@ -14,6 +13,8 @@ public class CalanderQUE
     	int m=Integer.parseInt(args[0]);
     	int d=Integer.parseInt(args[1]);
     	int y=Integer.parseInt(args[2]);
+	    try
+	    {
     	if(date[m]==2 && Utility.leapyear(y))
     	{
     		date[m]=29;
@@ -52,5 +53,10 @@ public class CalanderQUE
     		   }
     		   System.out.println();
     	   }
+		   catch(Exception e)
+		{
+			System.err.println("invalid");
+			
+		}
 	}
 }
