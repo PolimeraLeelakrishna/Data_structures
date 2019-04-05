@@ -11,6 +11,8 @@ public class Unorderlist
     public static  void main(String[] args) throws Exception 
     {   
     	String outPut=" ";
+	    try
+	    {
 		String path = "/home/shadowk/hi.txt";// path to get file
 		LinkedList<String> list = new LinkedList<String>();
 		PrintWriter pw = new PrintWriter("hi.txt");
@@ -45,5 +47,11 @@ public class Unorderlist
     		pw.write(outPut);
     	}
 		pw.close();
+	    }
+	    catch(Exception e)
+		{
+			System.err.println("invalid");
+			
+		}
 	}
 }
