@@ -1,5 +1,11 @@
-package com.bridgeit.Data_Structuress;
+//*************************************************************
+@purpose : balance the given expression
+@author   :POLIMERA LEELA KRISHNA
+@version : 1.0
+//*************************************************************
 
+
+package com.bridgeit.Data_Structuress;
 import com.bridgeit.DS.Utility.stack;
 import com.bridgeit.utility.Utility;
 
@@ -8,6 +14,8 @@ public class balanceparanthasis
     public static void main(String[] args) 
     {
 		char search;
+	    try
+	    {
 		stack<Character> stack = new stack<Character>(); // creating Obj of Stack
 		System.out.println("giving expresion");
 		String expression=Utility.getString();
@@ -32,6 +40,11 @@ public class balanceparanthasis
 		} else {
 			System.out.println("Arithmetic Expression not balanced");
 		}
-		
+	    }
+	    catch(Exception e)
+		{
+			System.err.println("invalid");
+			
+		}
 	}
 }
