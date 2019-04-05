@@ -1,10 +1,17 @@
-package com.bridgeit.Data_Structuress;
 
+
+**********************************************
+ *  @purpose      : print the prime anagram numbers using satck
+ *  @author       : P.LEELA KRISHNA
+ *  @version      : 1.0
+
+//*****************************************
+
+
+package com.bridgeit.Data_Structuress;
 import java.util.ArrayList;
 import java.util.Stack;
-
 import com.bridgeit.utility.Utility;
-
 public class primeanagramstack 
 {
 	
