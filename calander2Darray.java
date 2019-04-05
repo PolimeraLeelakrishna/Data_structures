@@ -1,7 +1,11 @@
+//******************************************************
+@purpose: print the 2d array calander.
+@auther :POLIMERA LEELA KRISHNA.
+version: 1.0	
+//**************************************************
+
 package com.bridgeit.Data_Structuress;
-
 import com.bridgeit.utility.Utility;
-
 public class calander2Darray 
 {
   public static void main(String[] args) 
@@ -12,7 +16,7 @@ public class calander2Darray
 		int m = Integer.parseInt(args[0]);  // giving month number at command line arguments.
 		int d = Integer.parseInt(args[1]);   // giving date number at command line arguments.
 		int y = Integer.parseInt(args[2]);   // giving year number at command line arguments.
-	
+	     try{
 		if(m==2 && Utility.leapyear(y))   // if month is 2 and if its leap year then date of month will become 29.
 		{
 			date[m]=29;
@@ -42,6 +46,12 @@ public class calander2Darray
 					System.out.printf("    ");
 			}
 		System.out.println();
+		}
+	     }
+	  catch(Exception e)
+		{
+			System.err.println("invalid");
+			
 		}
 	}
   
