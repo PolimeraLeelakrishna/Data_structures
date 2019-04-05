@@ -2,15 +2,20 @@ package com.bridgeit.Data_Structuress;
 
 
 import java.util.ArrayList;
-
-
-
 public class PrimeAnagram 
 {
 	public static void main(String[] args)
 	{
 		System.out.println("Prime Anagram Numbers 0-1000 :");
+		try
+		{
 		PrimeAnagram.primeAnagram();
+		}
+		catch(Exception e)
+		{
+			System.err.println("invalid");
+			
+		}
 	}
 	static String[][]primeAnagramArray=new String[13][13];
 	static ArrayList<Integer> primeList=new ArrayList<Integer>();    // creating object for storing prime numbers
