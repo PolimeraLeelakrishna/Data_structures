@@ -1,7 +1,13 @@
+
+**********************************************
+ *  @purpose      : Banking cash counter balance the bank amount diposit and withdrwal 
+ *  @author       : P.LEELA KRISHNA
+ *  @version      : 1.0
+
+//********************************************
+
 package com.bridgeit.Data_Structuress;
-
 import com.bridgeit.DS.Utility.Que;
-
 import com.bridgeit.utility.Utility;
 
 public class Bankingcashcounter 
@@ -15,6 +21,7 @@ public class Bankingcashcounter
 		 
 		 int deposit=0;
 		 int balance=0;
+		try{
 		 // creating que object
 		 Que que=new Que(balance);
 		
@@ -90,6 +97,12 @@ public class Bankingcashcounter
 						check=Utility.getString();
 					} 
       while(check.compareToIgnoreCase("yes")==0); // looping is happen untill exit from que
+		}
+		catch(Exception e)
+		{
+			System.err.println("invalid");
+			
+		}
 }
 }
 		 
