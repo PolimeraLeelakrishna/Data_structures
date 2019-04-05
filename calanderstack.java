@@ -1,5 +1,13 @@
-package com.bridgeit.Data_Structuress;
 
+**********************************************
+ *  @purpose      : calander using stack
+ *  @author       : P.LEELA KRISHNA
+ *  @version      : 1.0
+
+//*****************************************
+
+
+package com.bridgeit.Data_Structuress;
 import com.bridgeit.DS.Utility.stackusing_LinkedList;
 import com.bridgeit.utility.Utility;
 
@@ -10,6 +18,8 @@ public class calanderstack
 	public static void main(String[] args) 
      {
     	 @SuppressWarnings("rawtypes")
+		try
+		{
 		stackusing_LinkedList stack=new stackusing_LinkedList();
     	 @SuppressWarnings("rawtypes")
 		stackusing_LinkedList stack1=new stackusing_LinkedList();
@@ -72,6 +82,10 @@ public class calanderstack
 			}
 			System.out.println();
 		}
+		}
+		catch(Exception e)
+		{
+			System.err.println("invalid")
 
 	}
 }
