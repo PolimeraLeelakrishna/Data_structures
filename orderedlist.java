@@ -1,16 +1,26 @@
+
+
+
+**********************************************
+ *  @purpose      : order the list using linkedlist
+ *  @author       : P.LEELA KRISHNA
+ *  @version      : 1.0
+
+//*****************************************
+
+
+
 package com.bridgeit.Data_Structuress;
-
 import java.io.PrintWriter;
-
 import java.util.Arrays;
-
 import com.bridgeit.DS.Utility.LinkedList;
 import com.bridgeit.utility.Utility;
-
 public class orderedlist
 {
         public static void main(String[] args) throws Throwable {
 		String outPut;
+		try
+		{
 		String path = "/home/shadowk/number.text";
 		LinkedList<Integer> linkedList = new LinkedList<Integer>();
 		PrintWriter printWriter = new PrintWriter("number.txt");
@@ -44,6 +54,12 @@ public class orderedlist
 		}
 		printWriter.flush();
 		printWriter.close();
+		}
+		catch(Exception e)
+		{
+			System.err.println("invalid");
+			
+		}
 	}
 }
 
