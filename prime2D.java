@@ -1,13 +1,17 @@
+
+
+
+
+
+
 package com.bridgeit.Data_Structuress;
-
 import com.bridgeit.utility.Utility;
-
 public class prime2D 
 {
  public static void main(String[] args) 
  {
-		{
-
+		       try
+		       {
 			int[] arr = Utility.prime();
 			System.out.print(2 + " ");
 			int[][] arr1 = new int[10][167];
@@ -20,6 +24,12 @@ public class prime2D
 				}
 				System.out.println();
 			}
+		}
+ }
+	catch(Exception e)
+		{
+			System.err.println("invalid");
+			
 		}
     }
 }
